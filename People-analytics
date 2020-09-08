@@ -1,0 +1,432 @@
+use project;
+SELECT * FROM  department_name;
+
+INSERT INTO `project`.`Department_Name` (`Department_ID`, `Department_Name`) VALUES (2, 'Shop Floor');
+INSERT INTO `project`.`Department_Name` (`Department_ID`, `Department_Name`) VALUES (3, 'Psychology');
+INSERT INTO `project`.`Department_Name` (`Department_ID`, `Department_Name`) VALUES (1, 'HR');
+
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (14, 'Jon', 3);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (24, 'Matt', 3);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (34, 'Vinay', 3);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (44, 'Steve', 3);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (6, 'Henry', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (7, 'Khan', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (8, 'Anuj', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (9, 'Arun', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (10, 'Micheal', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (16, 'Bell', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (17, 'James', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (18, 'Scott', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (19, 'Vincent', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (20, 'Tony', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (26, 'Ken', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (27, 'Sam', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (28, 'Lilton', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (29, 'Raj', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (30, 'Zen', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (36, 'Praveen', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (37, 'Sushil', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (38, 'Ravi', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (39, 'Ramesh', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (40, 'Aravind', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (46, 'Lu', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (47, 'Wang', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (48, 'Prasath', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (49, 'Ryan', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (50, 'Lisa', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (56, 'Honey', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (57, 'Han', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (58, 'Multan', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (59, 'Osman', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (60, 'Mai', 2);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (5, 'ki', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (15, 'Max', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (25, 'Rota', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (35, 'Mary', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (45, 'Rose', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (55, 'Bin', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (65, 'Mark', 1);
+INSERT INTO `project`.`Employee` (`Employee_ID`, `Name`, `Department_ID`) VALUES (4, 'Ramesh', 3);
+
+SELECT * FROM employee;
+
+
+INSERT INTO `project`.`Shop_Floor_Department` (`Shop_Floor_Department_ID`, `Shop_Floor_Department_name`) VALUES (2, 'Electrical');
+INSERT INTO `project`.`Shop_Floor_Department` (`Shop_Floor_Department_ID`, `Shop_Floor_Department_name`) VALUES (3, 'Production');
+INSERT INTO `project`.`Shop_Floor_Department` (`Shop_Floor_Department_ID`, `Shop_Floor_Department_name`) VALUES (4, 'Quality');
+INSERT INTO `project`.`Shop_Floor_Department` (`Shop_Floor_Department_ID`, `Shop_Floor_Department_name`) VALUES (5, 'Technical');
+INSERT INTO `project`.`Shop_Floor_Department` (`Shop_Floor_Department_ID`, `Shop_Floor_Department_name`) VALUES (1, 'Mechanical');
+
+SELECT * FROM Shop_Floor_Department;
+
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (15, 2);
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (25, 3);
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (35, 4);
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (45, 5);
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (55, 1);
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (65, 3);
+INSERT INTO `project`.`HR_Employee` (`Employee_ID`, `Responsible_for_Shop_Floor_Department`) VALUES (5, 1);
+
+SELECT * FROM HR_Employee;
+
+
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (7, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (8, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (9, 4);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (10, 5);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (16, 1);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (17, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (18, 5);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (19, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (20, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (26, 5);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (27, 1);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (28, 1);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (29, 1);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (30, 4);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (36, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (37, 4);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (38, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (39, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (40, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (46, 4);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (47, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (48, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (49, 3);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (50, 4);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (56, 4);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (57, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (58, 2);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (59, 5);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (60, 5);
+INSERT INTO `project`.`Shop_floor_Supervisor` (`Shop_Floor_Supervisor_ID`, `Shop_Floor_Department_ID`) VALUES (6, 1);
+
+SELECT * FROM Shop_floor_Supervisor;
+
+INSERT INTO `project`.`Psychologist` (`Psychologist_ID`) VALUES (14);
+INSERT INTO `project`.`Psychologist` (`Psychologist_ID`) VALUES (24);
+INSERT INTO `project`.`Psychologist` (`Psychologist_ID`) VALUES (34);
+INSERT INTO `project`.`Psychologist` (`Psychologist_ID`) VALUES (44);
+INSERT INTO `project`.`Psychologist` (`Psychologist_ID`) VALUES (4);
+
+SELECT * FROM Psychologist;
+
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (2, 'Alyssa', 7, 5000, 2, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (3, 'Angelica', 8, 5000, 3, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (4, 'Kimberly', 9, 5000, 4, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (5, 'Nicole', 10, 5000, 5, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (6, 'Taylor', 16, 5000, 1, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (7, 'Victoria', 17, 5000, 3, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (8, 'Abigail', 18, 5000, 5, '2012/05/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (9, 'Amanda', 19, 1000, 2, '2012/08/15');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (10, 'Ashley', 20, 2000, 3, '2012/06/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (11, 'Maria', 26, 3500, 5, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (12, 'Gloria', 27, 3500, 1, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (13, 'Jane', 28, 3500, 1, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (14, 'Michelle', 29, 3500, 1, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (15, 'Amber', 30, 3500, 4, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (16, 'Danielle', 36, 3500, 3, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (17, 'Hannah', 37, 3500, 4, '2009/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (18, 'Jennifer', 38, 3500, 2, '2006/10/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (19, 'Josephine', 39, 2000, 2, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (20, 'Rachel', 40, 1000, 2, '2006/01/15');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (21, 'Angela', 46, 2000, 4, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (22, 'Brianna', 47, 2000, 3, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (23, 'Caitlin', 48, 2000, 3, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (24, 'Christina', 49, 2000, 3, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (25, 'Elizabeth', 50, 2000, 4, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (26, 'Jasmine', 56, 2000, 4, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (27, 'Kayla', 57, 2000, 2, '2006/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (28, 'Kiana', 58, 3000, 2, '06/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (29, 'Selena', 59, 3000, 5, '09/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (30, 'Tiffany', 60, 3000, 5, '09/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (31, 'Carmen', 6, 5000, 1, '9/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (32, 'Jada', 7, 5000, 2, '5/3/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (33, 'Julia', 8, 5000, 3, '5/3/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (34, 'Kiara', 9, 5000, 4, '5/3/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (35, 'Natasha', 10, 3000, 5, '9/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (36, 'Samantha', 16, 3000, 1, '9/6/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (37, 'Tara', 17, 3000, 3, '9/6/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (38, 'Alexandra', 18, 1000, 5, '6/12/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (39, 'Christine', 19, 1000, 2, '8/1/15');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (40, 'Destiny', 20, 1000, 3, '8/2/15');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (41, 'Emily', 26, 1000, 5, '8/2/15');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (42, 'Faith', 27, 1000, 1, '8/2/15');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (43, 'Florence', 28, 5000, 1, '5/3/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (44, 'Marissa', 29, 5000, 1, '5/3/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (45, 'Rebecca', 30, 5000, 4, '5/3/20');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (46, 'Sarah', 36, 3000, 3, '9/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (47, 'Stephanie', 37, 3000, 4, '9/06/05');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (48, 'Theresa', 38, 3000, 2, '6/2/13');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (49, 'Vanessa', 39, 4000, 2, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (50, 'Andrea', 40, 4000, 2, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (51, 'Ariana', 46, 4000, 4, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (52, 'Briana', 47, 4000, 3, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (53, 'Caroline', 48, 4000, 3, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (54, 'Catherine', 49, 4000, 3, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (55, 'Charity', 50, 4000, 4, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (56, 'Chelsea', 56, 4000, 4, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (57, 'Chloe', 57, 4000, 2, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (58, 'Christiana', 58, 4000, 2, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (59, 'Crystal', 59, 4000, 5, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (60, 'mad', 60, 4000, 5, '9/8/03');
+INSERT INTO `project`.`Labour` (`Labour_ID`, `Name`, `Supervisor_ID`, `Salary`, `Floor_Department_ID`, `Date_of_Joining`) VALUES (1, 'Gabrielle', 6, 1000, 1, '8/1/15');
+
+SELECT * FROM LABOUR;
+
+
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (13);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (27);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (33);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (37);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (23);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (43);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (57);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (53);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (7);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (3);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (47);
+INSERT INTO `project`.`Patient` (`Patient_ID`) VALUES (17);
+
+SELECT * FROM Patient;
+
+
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (2, 14, 13, 2, 'No', 'No', 'No', 1, 'No', 3, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (3, 24, 27, 1, 'No', 'No', 'Yes', 2, 'Yes', 6, 'Single', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (4, 34, 33, 0, 'Yes', 'Yes', 'Yes', 4, 'No', 8, 'Married', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (5, 44, 37, 2, 'No', 'No', 'Yes', 1, 'No', 7, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (6, 4, 23, 1, 'Yes', 'No', 'Yes', 2, 'No', 7, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (7, 14, 43, 1, 'Yes', 'Yes', 'Yes', 3, 'No', 3, 'Married', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (8, 24, 57, 0, 'No', 'No', 'Yes', 1, 'No', 7, 'Divorced', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (9, 34, 53, 1, 'Yes', 'Yes', 'Yes', 3, 'No', 4, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (10, 44, 7, 2, 'No', 'No', 'Yes', 3, 'No', 7, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (11, 34, 3, 1, 'No', 'Yes', 'Yes', 3, 'No', 8, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (12, 14, 47, 2, 'No', 'No', 'Yes', 2, 'No', 6, 'Single', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (13, 4, 23, 1, 'Yes', 'Yes', 'No', 1, 'No', 5, 'Divorced', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (14, 14, 43, 2, 'Yes', 'No', 'Yes', 2, 'No', 7, 'Divorced', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (15, 24, 57, 2, 'No', 'No', 'Yes', 3, 'Yes', 8, 'Single', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (16, 34, 53, 2, 'Yes', 'Yes', 'Yes', 4, 'No', 4, 'Divorced', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (17, 44, 7, 1, 'No', 'Yes', 'Yes', 2, 'No', 3, 'Divorced', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (18, 24, 3, 1, 'No', 'Yes', 'Yes', 2, 'No', 6, 'Divorced', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (19, 24, 17, 1, 'Yes', 'No', 'Yes', 4, 'No', 7, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (20, 14, 13, 0, 'Yes', 'No', 'Yes', 3, 'No', 4, 'Single', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (21, 4, 27, 2, 'Yes', 'Yes', 'Yes', 2, 'No', 6, 'Divorced', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (22, 14, 33, 2, 'No', 'No', 'Yes', 4, 'Yes', 6, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (23, 24, 37, 0, 'No', 'Yes', 'Yes', 4, 'No', 5, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (24, 34, 23, 2, 'No', 'Yes', 'No', 2, 'No', 5, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (25, 44, 43, 1, 'Yes', 'Yes', 'Yes', 1, 'Yes', 8, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (26, 4, 57, 1, 'Yes', 'Yes', 'No', 3, 'No', 6, 'Divorced', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (27, 14, 53, 2, 'No', 'No', 'Yes', 1, 'Yes', 5, 'Single', 'Yes');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (28, 24, 7, 1, 'Yes', 'Yes', 'Yes', 4, 'No', 8, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (29, 34, 3, 2, 'No', 'Yes', 'Yes', 4, 'No', 6, 'Married', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (30, 44, 47, 2, 'No', 'No', 'Yes', 4, 'No', 5, 'Single', 'No');
+INSERT INTO `project`.`Consultations` (`Case_ID`, `Psychologist_Employee_ID`, `Patient`, `Work_Pressure`, `Family_Psychiatric_History`, `Treatment`, `Disabilities`, `No_of_Dependents`, `Appetite`, `Sleep_hours`, `Marital_Status`, `Current_Medication`) VALUES (1, 4, 17, 0, 'No', 'Yes', 'Yes', 2, 'Yes', 8, 'Single', 'Yes');
+
+select * from feedback;
+
+
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (2, 4, 15, 'Work pressure', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (3, 4, 25, 'Physical fitness', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (4, 4, 35, 'NA', 'NA');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (5, 4, 45, 'NA', 'NA');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (6, 4, 55, 'Family issue', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (7, 4, 65, 'Work pressure', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (8, 14, 5, 'Physical fitness', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (9, 14, 15, 'Mental stress', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (10, 14, 25, 'Mental stress', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (11, 14, 35, 'Mental stress', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (12, 14, 45, 'Mental stress', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (13, 14, 55, 'Work pressure', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (14, 14, 65, 'Physical fitness', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (15, 24, 5, 'NA', 'NA');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (16, 24, 15, 'NA', 'NA');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (17, 24, 25, 'Work pressure', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (18, 24, 35, 'Physical fitness', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (19, 24, 45, 'NA', 'NA');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (20, 24, 55, 'NA', 'NA');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (21, 24, 65, 'Family issue', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (22, 34, 5, 'Work pressure', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (23, 34, 15, 'Physical fitness', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (24, 34, 25, 'Mental stress', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (25, 34, 35, 'Physical fitness', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (26, 34, 45, 'Mental stress', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (27, 34, 55, 'Mental stress', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (28, 34, 65, 'Mental stress', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (29, 44, 5, 'Mental stress', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (30, 44, 15, 'Work pressure', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (31, 44, 25, 'Work pressure', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (32, 44, 35, 'Work pressure', 'No');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (33, 44, 45, 'Work pressure', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (34, 44, 55, 'Work pressure', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (35, 44, 65, 'Work pressure', 'Yes');
+INSERT INTO `project`.`Feedback` (`Session_ID`, `Psychologist`, `HR_Employee_ID`, `Problem_faced`, `Improvement_Status`) VALUES (1, 4, 5, 'Mental stress', 'Yes');
+
+SELECT * FROM Feedback;
+
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (2, 'Breakdown downtime', 98, 80, 1);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (3, 'No of Product', 97, 78, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (4, 'Quality standard', 80, 76, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (5, 'Technical Improvement', 87, 80, 7);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (6, 'Breakdown downtime', 76, 87, 6);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (7, 'No of Product', 78, 79, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (8, 'Technical Improvement', 98, 77, 8);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (9, 'Breakdown downtime', 87, 87, 7);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (10, 'No of Product', 88, 76, 1);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (11, 'Technical Improvement', 76, 54, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (12, 'Breakdown downtime', 56, 78, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (13, 'Breakdown downtime', 76, 80, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (14, 'Breakdown downtime', 90, 87, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (15, 'Quality standard', 94, 79, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (16, 'No of Product', 86, 77, 0);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (17, 'Quality standard', 83, 87, 1);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (18, 'Breakdown downtime', 89, 76, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (19, 'Breakdown downtime', 80, 54, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (20, 'Breakdown downtime', 79, 78, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (21, 'Quality standard', 69, 89, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (22, 'No of Product', 34, 78, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (23, 'No of Product', 67, 87, 0);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (24, 'No of Product', 90, 77, 7);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (25, 'Quality standard', 87, 77, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (26, 'Quality standard', 89, 67, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (27, 'Breakdown downtime', 89, 89, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (28, 'Breakdown downtime', 76, 80, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (29, 'Technical Improvement', 89, 80, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (30, 'Technical Improvement', 78, 78, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (31, 'Breakdown downtime', 78, 76, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (32, 'Breakdown downtime', 80, 80, 6);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (33, 'No of Product', 79, 87, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (34, 'Quality standard', 69, 79, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (35, 'Technical Improvement', 34, 77, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (36, 'Breakdown downtime', 67, 87, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (37, 'No of Product', 90, 76, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (38, 'Technical Improvement', 87, 54, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (39, 'Breakdown downtime', 89, 78, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (40, 'No of Product', 89, 80, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (41, 'Technical Improvement', 76, 87, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (42, 'Breakdown downtime', 100, 79, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (43, 'Breakdown downtime', 98, 77, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (44, 'Breakdown downtime', 97, 87, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (45, 'Quality standard', 80, 76, 1);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (46, 'No of Product', 87, 80, 1);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (47, 'Quality standard', 76, 87, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (48, 'Breakdown downtime', 78, 79, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (49, 'Breakdown downtime', 98, 77, 7);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (50, 'Breakdown downtime', 87, 87, 6);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (51, 'Quality standard', 88, 76, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (52, 'No of Product', 76, 54, 8);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (53, 'No of Product', 56, 78, 7);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (54, 'No of Product', 76, 80, 1);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (55, 'Quality standard', 90, 87, 5);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (56, 'Quality standard', 94, 79, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (57, 'Breakdown downtime', 86, 77, 2);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (58, 'Breakdown downtime', 83, 87, 4);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (59, 'Technical Improvement', 89, 76, 3);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (60, 'Technical Improvement', 80, 79, 0);
+INSERT INTO `project`.`Productivity_Measure` (`Labour_ID`, `Type_of_Measure`, `Goals_attained_percentage`, `Contribution_to_Number_of_Product`, `Contribution_to_loss_of_product`) VALUES (1, 'Breakdown downtime', 100, 80, 1);
+
+SELECT * FROM Productivity_Measure;
+
+
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (2, 15, 2, '2', 10, 4, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (3, 25, 3, '3', 0, 3, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (4, 35, 4, '3', 8, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (5, 45, 5, '2', 2, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (6, 55, 1, '4', 7, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (7, 65, 3, '1', 1, 4, 1);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (8, 45, 5, '3', 1, 4, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (9, 15, 2, '3', 9, 4, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (10, 25, 3, '3', 7, 3, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (11, 45, 5, '2', 5, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (12, 5, 1, '3', 9, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (13, 5, 1, '3', 5, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (14, 5, 1, '4', 2, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (15, 35, 4, '3', 4, 3, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (16, 25, 3, '1', 10, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (17, 35, 4, '2', 6, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (18, 15, 2, '4', 1, 3, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (19, 15, 2, '4', 25, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (20, 15, 2, '4', 3, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (21, 35, 4, '3', 4, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (22, 25, 3, '1', 5, 4, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (23, 25, 3, '2', 12, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (24, 25, 3, '4', 0, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (25, 35, 4, '1', 4, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (26, 35, 4, '3', 14, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (27, 15, 2, '1', 10, 4, 2);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (28, 15, 2, '2', 9, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (29, 45, 5, '4', 22, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (30, 45, 5, '1', 2, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (31, 5, 1, '4', 1, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (32, 15, 2, '4', 4, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (33, 25, 3, '3', 10, 3, 1);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (34, 35, 4, '4', 1, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (35, 45, 5, '4', 2, 3, 1);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (36, 5, 1, '3', 5, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (37, 25, 3, '3', 3, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (38, 45, 5, '4', 2, 3, 1);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (39, 15, 2, '1', 1, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (40, 25, 3, '1', 5, 3, 1);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (41, 45, 5, '4', 1, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (42, 5, 1, '1', 1, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (43, 5, 1, '3', 1, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (44, 5, 1, '3', 9, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (45, 35, 4, '4', 12, 4, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (46, 25, 3, '3', 22, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (47, 35, 4, '3', 9, 4, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (48, 15, 2, '2', 1, 4, 1);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (49, 15, 2, '4', 9, 4, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (50, 15, 2, '4', 1, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (51, 35, 4, '3', 1, 3, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (52, 25, 3, '3', 2, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (53, 25, 3, '1', 4, 4, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (54, 25, 3, '1', 4, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (55, 35, 4, '4', 2, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (56, 35, 4, '4', 15, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (57, 15, 2, '1', 9, 4, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (58, 15, 2, '1', 2, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (59, 45, 5, '4', 7, 4, 4);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (60, 45, 5, '3', 7, 3, 3);
+INSERT INTO `project`.`Performance` (`Labour`, `HR_Employee`, `Shop_Floor_Department`, `Respect`, `Availing_leave`, `Supervisor_Rating`, `Engagement`) VALUES (1, 5, 1, '4', 6, 3, 1);
+
+SELECT * FROM Performance;
+
+INSERT INTO `project`.`Cost` (`Floor_Department`, `Labour_cost`, `Cost_per_Product`, `Product_per_labour`, `ROI`) VALUES (2, 45000, 80000, 4300, 35000);
+INSERT INTO `project`.`Cost` (`Floor_Department`, `Labour_cost`, `Cost_per_Product`, `Product_per_labour`, `ROI`) VALUES (3, 60000, 100000, 4500, 4000);
+INSERT INTO `project`.`Cost` (`Floor_Department`, `Labour_cost`, `Cost_per_Product`, `Product_per_labour`, `ROI`) VALUES (4, 3000, 6800, 4300, 3800);
+INSERT INTO `project`.`Cost` (`Floor_Department`, `Labour_cost`, `Cost_per_Product`, `Product_per_labour`, `ROI`) VALUES (5, 2400, 4500, 3400, 2100);
+INSERT INTO `project`.`Cost` (`Floor_Department`, `Labour_cost`, `Cost_per_Product`, `Product_per_labour`, `ROI`) VALUES (1, 40000, 70000, 4000, 30000);
+
+SELECT * FROM Cost;
+
+/*lists of employee and labour who work in mechanical department.
+*/
+use project; 
+SELECT E.NAME as Employer, L.NAME as labour
+FROM EMPLOYEE E, LABOUR L, SHOP_FLOOR_DEPARTMENT SL, SHOP_FLOOR_SUPERVISOR SUP
+WHERE L.FLOOR_DEPARTMENT_ID= SL.SHOP_FLOOR_DEPARTMENT_ID AND
+L.SUPERVISOR_ID= SUP.SHOP_FLOOR_SUPERVISOR_ID AND
+SUP.SHOP_FLOOR_SUPERVISOR_ID = E.employee_ID AND 
+SL.SHOP_FLOOR_DEPARTMENT_NAME="Mechanical";
+
+/* No of patients who are taken care by matt and their average sleep hours*/
+
+SELECT count(*) AS Number_of_Patients , Avg( C.SLEEP_HOURS) AS AVERAGE_SLEEP_HOURS
+FROM CONSULTATIONS AS C 
+JOIN PSYCHOLOGIST AS P ON C.PSYCHOLOGIST_EMPLOYEE_ID=P.PSYCHOLOGIST_ID
+JOIN EMPLOYEE AS E ON P.PSYCHOLOGIST_ID=E.EMPLOYEE_ID
+WHERE E.NAME="Matt"
+group by C.PSYCHOLOGIST_EMPLOYEE_ID;
+
+/* Psychologist 'Jon' wants to know the HR responsible for the patients he attended to report their health status*/
+use project;
+SELECT L.Name AS LABOUR,S.SHOP_FLOOR_DEPARTMENT_NAME AS SHOP_FLOOR_DEPARTMENT,
+PM.GOALS_ATTAINED_PERCENTAGE AS GOALS_ATTAINED,C.TREATMENT AS TREATMENT_STATUS,
+C.WORK_PRESSURE AS WORK_PRESSURE,P.RESPECT AS RESPECT,P.AVAILING_LEAVE AS LEAVE_AVAILED, E2.NAME AS HR
+FROM LABOUR L, PRODUCTIVITY_MEASURE PM, CONSULTATIONS C, PERFORMANCE P, SHOP_FLOOR_DEPARTMENT S,
+EMPLOYEE E1, EMPLOYEE E2
+WHERE L.FLOOR_DEPARTMENT_ID=S.SHOP_FLOOR_DEPARTMENT_ID AND L.LABOUR_ID=C.PATIENT AND L.LABOUR_ID=PM.LABOUR_ID
+AND L.LABOUR_ID=P.LABOUR AND C.PSYCHOLOGIST_EMPLOYEE_ID = E1.EMPLOYEE_ID AND P.HR_EMPLOYEE=E2.EMPLOYEE_ID AND
+E1.NAME='Jon'
+
+
+
